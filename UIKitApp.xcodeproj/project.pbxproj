@@ -13,6 +13,7 @@
 		A517924D273AFB4B00A5EEC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A517924B273AFB4B00A5EEC6 /* Main.storyboard */; };
 		A517924F273AFB5500A5EEC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A517924E273AFB5500A5EEC6 /* Assets.xcassets */; };
 		A5179252273AFB5500A5EEC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5179250273AFB5500A5EEC6 /* LaunchScreen.storyboard */; };
+		A5A140B6278B3A8800845198 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A140B5278B3A8800845198 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A517924E273AFB5500A5EEC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5179251273AFB5500A5EEC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5179253273AFB5500A5EEC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5A140B5278B3A8800845198 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A517924E273AFB5500A5EEC6 /* Assets.xcassets */,
 				A5179250273AFB5500A5EEC6 /* LaunchScreen.storyboard */,
 				A5179253273AFB5500A5EEC6 /* Info.plist */,
+				A5A140B5278B3A8800845198 /* HomeViewController.swift */,
 			);
 			path = UIKitApp;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				A517924A273AFB4B00A5EEC6 /* ViewController.swift in Sources */,
 				A5179246273AFB4B00A5EEC6 /* AppDelegate.swift in Sources */,
 				A5179248273AFB4B00A5EEC6 /* SceneDelegate.swift in Sources */,
+				A5A140B6278B3A8800845198 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
