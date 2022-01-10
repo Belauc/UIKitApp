@@ -37,9 +37,8 @@ class ViewController: UIViewController {
         redTF.delegate = self
         greenTF.delegate = self
         blueTF.delegate = self
-        redTF.keyboardType = .numberPad
-        greenTF.keyboardType = .numberPad
-        blueTF.keyboardType = .numberPad
+        addDoneButton(to: redTF, greenTF, blueTF)
+        
     }
 
     @IBAction func ActionSlider(_ sender: UISlider) {
@@ -85,7 +84,36 @@ extension ViewController{
                                             blue: CGFloat(blueSliderOutleet.value)/255,
                                             alpha: 1)
     }
+    
+    private func addDoneButton(to textFields: UITextField...) {
+        textFields.forEach({textField in
+            textField.keyboardType = .numberPad
+            let keyboardToolBar = UIToolbar()
+            textField.inputAccessoryView = keyboardToolBar
+            keyboardToolBar.sizeToFit()
+            
+            let doneButton = UIBarButtonItem(title: "Done",
+                                             style: .done,
+                                             target: self,
+                                             action: #selector(doneButtonPressedInTF))
+            
+            let flexBarButton = UIBarButtonItem(
+                barButtonSystemItem: .flexibleSpace,
+                target: nil,
+                action: nil
+            )
+            
+            keyboardToolBar.items = [flexBarButton, doneButton]
+
+            
+        })
+    }
+    
+    @objc private func doneButtonPressedInTF(){
+        view.endEditing(true)
+    }
 }
+
 
 extension ViewController: UITextFieldDelegate {
     
